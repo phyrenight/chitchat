@@ -3,7 +3,10 @@
   <head>
     <title>Chit chat</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="addChat.js">
+      console.log("Hello world");</script>
+</head>
 <body>
   <header>
     <h1>Chit Chat</h1>
@@ -45,9 +48,11 @@
       <div id="form">
       <form>
         <input type="text" name="chat" id="chitChat">
-        <button type="submit" onclick="postIt()">Submit</button>
+        <button type="submit" onclick="postIt(document.getElementById('chitChat').value)">Submit</button>
       </form>
       </div>
     </section>
   </article>
+
 </body>
+</html>
