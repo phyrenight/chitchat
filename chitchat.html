@@ -4,8 +4,7 @@
     <title>Chit chat</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-      <script src="addChat.js">
-      console.log("Hello world");</script>
+      <script src="javascript/addChat.js"></script>
 </head>
 <body>
   <header>
@@ -46,9 +45,9 @@
       <div id="talk">
       </div>
       <div id="form">
-      <form>
+      <form id="myform">
         <input type="text" name="chat" id="chitChat">
-        <button type="submit" onclick="postIt(document.getElementById('chitChat').value)">Submit</button>
+        <input type="button" onclick="postIt()" value="submit">
       </form>
       </div>
     </section>
