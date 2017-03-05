@@ -4,9 +4,8 @@
     <title>Chit chat</title>
     <meta charset="utf-8" />
     <meta name="viewport" name="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -15,23 +14,34 @@
         <h1>Chit Chat</h1>
       </div>
       <div class="nav row justify-content-center">
-        <a href="#" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">home</a>
-        <a href="#" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">rooms</a>
-        <a href="#" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">about</a>
+        <a href="#" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Home</a>
+        <a href="#" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Rooms</a>
+        <a href="#" class="col-xs-1 col-sm-1 col-md-1 col-lg-1">About</a>
       </div>
     </header>
     <aside>
-      <h2>Acitive rooms</h2>
+      <h3>Active rooms</h3>
       <div>
-        <a href="#"> room1</a>
-        <a href="#"> room2</a>
-        <a href="#"> room3</a>
-        <a href="#"> room4</a>
+        <a href="#"> room 1</a>
+        <a href="#"> room 2</a>
+        <a href="#"> room 3</a>
+        <a href="#"> room 4</a>
       </div>
     </aside>
-    <article>
-      <p>You are currently in: <em>room 5</em></p>
-      <section id="instruct">
+    <main>
+      <p class="roomOccupancy">You are currently in: <em>room 5</em></p>
+      <section id="chat" class="">
+        <h3>chat</h3>
+        <div id="talk">
+        </div>
+        <div id="form">
+          <form id="myform">
+            <input type="text" name="chat" id="chitChat">
+            <input type="button" onclick="postIt()" value="submit">
+          </form>
+        </div>
+      </section>
+      <section id="instruct"  class="">
         <h3> Instructions: </h3>
         <p>1) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
@@ -44,19 +54,8 @@
         </p>
         <p>5) Nunc varius augue urna, ac lacinia erat congue eget. Nulla quam leo, faucibus sed augue accumsan, gravida tincidunt nulla. </p>
       </section>
-      <section id="chat">
-        <h3>chat</h3>
-        <div id="talk">
-        </div>
-        <div id="form">
-          <form id="myform">
-            <input type="text" name="chat" id="chitChat">
-            <input type="button" onclick="postIt()" value="submit">
-          </form>
-        </div>
-      </section>
-    </article>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    </main>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="javascript/addChat.js"></script>
