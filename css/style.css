@@ -17,7 +17,6 @@ header{
   width: 100%;
   background-color: rgb(128,149,232);
 }
-
 h1 {
   font-size: 335%;
   text-align: center;
@@ -84,79 +83,3 @@ section{
   background-color: rgb(128, 149, 232);
   padding: 1% 0%;
 }
-
-/*
-.nav{
-  border-bottom: 1px solid black;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #000;  
-}
-
-aside {
-  border: 1px solid black;
-  display: inline-block;
-  margin-left: 3%;
-  margin-top: 8%;
-  width: 15%;
-  vertical-align: top;
-}
-
-aside h2 {
-  text-align: center;
-}
-
-aside a {
-  text-decoration: none;
-  display: inline-block;
-  margin: 0 30% 5% 30%;
-}
-
-article {
-  text-align: center; 
-  display: inline-block;
-  width: 70%;
-  height: 100%;
-/*  background-color: rgb(232, 211, 128);*/
-}
-
-/*
-.roomOccupancy {
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-}
-
-section{
-  display: inline-block;
-}
-
-#instruct {
-  margin-top: 8%;
-  margin-left: 5%;
-  width: 100%;
-}
-
-
-#chat {
-  border: 1px black solid;
-  margin-left: 2%;
-  width: 50%;
-  height: 90%;
-  /*vertical-align: top;/
-}
-
-#talk{
-  border-bottom: 1px solid black;
-  height: 80%;
-  overflow: scroll;
-}
-
-#form {
-  padding-top: 1%;
-  margin-left: 5%;
-}
- 
-*/
